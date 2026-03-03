@@ -2,6 +2,7 @@ from enum import Enum
 from pydantic import BaseModel
 from app.schemas import ResponseModel
 from app.schemas.order_item import CreateOrderItem, OrderItemResponseModel
+from app.schemas.user import UserCustomerResponseModel
 
 class OrderStatus(str, Enum):
     pending = 'pending'
@@ -14,6 +15,7 @@ class CreateOrder(BaseModel):
 
 class OrderResponseModel(ResponseModel):
     id: int
+    customer_id: UserCustomerResponseModel
     status: str
     total: float
     order_items: list[OrderItemResponseModel]
