@@ -107,7 +107,7 @@ ADMIN_USER_PASSWORD=
 Debes ejecutar los siguientes comandos en tu terminal:
 ```
 psql -U postgres # al ejecutar este comando se te pedirá ingresar la contraseña de tu usuario postgres
-CREATE DATABASE <nombre de la base de datos> # el nombre debe ser igual al que definiste en la variable de entorno DATABASE_NAME
+CREATE DATABASE <nombre de la base de datos> # el nombre debe ser igual al que definiste en la variable de entorno DB_NAME
 ```
 
 ### Crear usuario administrador
